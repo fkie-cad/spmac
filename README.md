@@ -34,6 +34,7 @@ Depending on the hardware, you need slightly different commands to see the outpu
 make TARGET=native client
 ./client.native
 ```
+*Note: As most Linux computers are way more powerful than the targeted hardware, you can expect that all measured timing are 0*
 
 **Zolertia ReMote**
 ```
