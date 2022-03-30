@@ -7,9 +7,15 @@ This repository provides a prototype implementation of SP-MAC and the benchmarki
 
 ### Getting started
 
-To run our BP-MAC implementation, you first need to setup the Contiki-NG [build environment](https://github.com/contiki-ng/contiki-ng/wiki). To recreate the results from the paper, you additionally need special hardware, namely a Zolertia Re-Mote boards. However, you can also run the applcation natively in Linux or within the Cooja simulatation environment.
+To run our SP-MAC implementation, you first need to setup the Contiki-NG [build environment](https://github.com/contiki-ng/contiki-ng/wiki). To recreate the results from the paper, you additionally need special hardware, namely a Zolertia Re-Mote boards. However, you can also run the applcation natively in Linux or within the Cooja simulatation environment.
 
-After you setup the environment, you can copy the spmac folder into the top-level Contiki-NG directory.
+After you setup the environment, you can copy the *mac-schemes* folder into the top-level Contiki-NG directory.
+
+#### Known Error Messages
+
+* On macOS, we ran into the problem that `git submodule update --init --recursive` did nothing after cloning the contiki-ng repository. Using `git clone --recursive https://github.com/contiki-ng/contiki-ng.git` when cloning makes that step unnecessary and did work for us in that case.
+
+* If you run contiki-ng via docker, as described in the Contiki-NG documentation, you might see the warning `WARNING: The requested image's platform (linux/386) does not match the detected host platform (linux/amd64) and no specific platform was requested`. This is apparently a bug in docker and the warning can be ignored.
 
 ### Evaluation Flags
 

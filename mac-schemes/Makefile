@@ -10,7 +10,7 @@ endif
 
 CFLAGS += -DWITH_DTLS=1 -DTAGLEN=1 -DMSGLEN=50 -O2
 
-MODULES += spmac/tinydtls-support
+MODULES += mac-schemes/tinydtls-support
 MODULES += $(TINYDTLS_PATH) ${addprefix $(TINYDTLS_PATH)/,aes sha2 ecc}
 
 
