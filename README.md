@@ -7,7 +7,7 @@ This repository provides a prototype implementation of SP-MAC and the benchmarki
 
 ### Getting started
 
-To run our SP-MAC implementation, you first need to setup the Contiki-NG [build environment](https://github.com/contiki-ng/contiki-ng/wiki). To recreate the results from the paper, you additionally need special hardware, namely a Zolertia Re-Mote boards. However, you can also run the applcation natively in Linux or within the Cooja simulatation environment.
+To run our SP-MAC implementation, you first need to setup the Contiki-NG [build environment](https://github.com/contiki-ng/contiki-ng/wiki). To recreate the results from the paper, you additionally need special hardware, namely a Zolertia Re-Mote boards. However, you can also run the application natively in Linux or within the Cooja simulatation environment.
 
 After you setup the environment, you can copy the *mac-schemes* folder into the top-level Contiki-NG directory.
 
@@ -19,10 +19,10 @@ After you setup the environment, you can copy the *mac-schemes* folder into the 
 
 ### Evaluation Flags
 
-Now you are almost ready to run the code. The final adjustment needs to happen in the Makefile, to adopt it to you specific hardware setup and evaluation goal. The relevant flags that have to be used are the following four:
+Now you are ready to run the code. You can however still make adjustmets in the Makefile, to adopt it to your evaluation goal. The relevant `CFLAGS` that have to be used are the following three:
 
  - *DWITH_DTLS*: has to be set to 1
- - *DTAGLEN*: lets you choose the length of the evaluated MAC tag
+ - *DTAGLEN*: lets you choose the length of the evaluated MAC tag (1,2,4 are possible)
  - *DMSGLEN* sets the length of the evaluated messages
 
 ### Run the code
